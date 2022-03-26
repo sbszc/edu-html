@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <!--The viewport is the user's visible area of a web page. It varies with the device, and will be smaller on a mobile phone than on a computer screen.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Define the author of a page:-->
+    <meta name="author" content="John Doe">
+    <!--Define a description of your web page:-->
+    <meta name="description" content="Free Web tutorials">
+    <!--Define keywords for search engines:-->
+    <meta name="keywords" content="HTML, CSS, XML, JavaScript">
+    <!--Refresh document every 30 seconds:-->
+    <meta http-equiv="refresh" content="-1">
+    <!--Specifies the base URL and base target for all relative URLs in a page:
+    <base href="https://www.w3schools.com/" target="_blank">
+    -->
+
+    <title>My First HTML</title>
+
+    <!--External Javascript-->
+    <script src='index.js'></script>
+    <!--Internal Javascript-->
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "Hello JavaScript!";
+        }
+    </script>
+
+    <!--External CSS-->
+    <link rel="stylesheet" href="index.css">
+    <!--Internal CSS-->
+    <style>
+        #p01 {
+            color: blue;
+        }
+
+        p.error {
+            color: red;
+        }
+
+        #myLink:link {
+            color: green;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        #myLink:visited {
+            color: pink;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        #myLink:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        #myLink:active {
+            color: yellow;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        #myLink2:link,
+        #myLink2:visited {
+            background-color: #f44336;
+            color: white;
+            padding: 15px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        #myLink2:hover,
+        #myLink2:active {
+            background-color: red;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 15px;
+        }
+
+        table#t01 tr:nth-child(even) {
+            background-color: #eee;
+        }
+
+        table#t01 tr:nth-child(odd) {
+            background-color: #fff;
+        }
+
+        table#t01 th {
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    texto
+    <a href="https://www.w3schools.com" target="_self">
+        <img title="I'm a tooltip" src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com"
+            style="border:0;width:104px;height:142px;">
+        <!--border:0; is added to prevent IE9 (and earlier) from displaying a border around the image (when the image is a link).-->
+        target="_self"
+    </a>
+    <a href="https://www.w3schools.com" target="_blank" style="text-decoration: none;background-color: powderblue;">
+        target="_blank"
+        style="text-decoration: none;"
+    </a>
+    <a id="myLink" href="#BOOKMARK1">Styled Link</a>
+    <a id="myLink2" href="#BOOKMARK2">Styled Link2</a>
+    <p style="color:red">This is a paragraph.</p>
+    <p title="I'm a tooltip">This is a paragraph.</p>
+    <p title="I'm a tooltip">This is a paragraph.</p>
+    <h1 style="font-size:60px;">Heading 1</h1>
+    <hr id="BOOKMARK1">
+    <p>This is<br>a paragraph<br>with line breaks.</p>
+    <pre style="background-color: powderblue;">
+        My Bonnie lies over the ocean.
+      
+        My Bonnie lies over the sea.
+      
+        My Bonnie lies over the ocean.
+      
+        Oh, bring back my Bonnie to me.
+    </pre>
+    <hr id="BOOKMARK2">
+    <h1 style="font-family:verdana;">This is a heading</h1>
+    <p style="font-family:verdana, sans-serif;">This is a paragraph.</p>
+    <h1 style="font-size:300%;">This is a heading</h1>
+    <p style="font-size:160%;">This is a paragraph.</p>
+    <h1 style="text-align:center; font-family:verdana;">Centered Heading</h1>
+    <p style="text-align:center; font-family:verdana;">Centered paragraph.</p>
+    <hr>
+    <b>This text is bold</b>
+    <strong>This text is strong</strong>
+    <i>This text is italic</i>
+    <em>This text is emphasized</em>
+    <h2>HTML <small>Small</small> Formatting</h2>
+    <h2>HTML <mark>Marked</mark> Formatting</h2>
+    <p>My favorite color is <del>blue</del> red.</p>
+    <p>My favorite <ins>color</ins> is red.</p>
+    <p>This is <sub>subscripted</sub> text.</p>
+    <p>This is <sup>superscripted</sup> text.</p>
+    <hr>
+    <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+    <p>Here is a quote from WWF's website:</p>
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+        For 50 years, WWF has been protecting the future of nature.
+        The world's leading conservation organization,
+        WWF works in 100 countries and is supported by
+        1.2 million members in the United States and
+        close to 5 million globally.
+    </blockquote>
+    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+    <address>
+        Written by John Doe.<br>
+        Visit us at:<br>
+        Example.com<br>
+        Box 564, Disneyland<br>
+        USA
+    </address>
+    <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+    <bdo dir="rtl">This text will be written from right to left</bdo>
+    <hr>
+    <!--
+        coment
+    -->
+    <!--Inline CSS-->
+    <h1 style="border:2px solid Tomato;">Hello World</h1>
+    <h1 style="border:2px solid DodgerBlue;">Hello World</h1>
+    <h1 style="border:2px solid Violet;">Hello World</h1>
+    <h1 style="background-color:rgb(255, 99, 71);">...</h1>
+    <h1 style="background-color:#ff6347;">...</h1>
+    <h1 style="background-color:hsl(9, 100%, 64%);">...</h1>
+    <h1 style="background-color:rgba(255, 99, 71, 0.5);">...</h1>
+    <h1 style="background-color:hsla(9, 100%, 64%, 0.5);padding: 20px; margin: 40px;">...</h1>
+
+    <p id="p01">I am different by my id</p>
+    <p class="error">I am different by my class</p>
+    <hr>
+    <p>texto con imagen flotante a la derecha<img title="I'm a tooltip"
+            src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com"
+            style="float:right;border:0;width:104px;height:142px;"></p>
+    <div
+        style="background-image: url('https://www.w3schools.com/html/img_girl.jpg'); background-repeat: no-repeat;   background-size: cover;">
+        You can specify background images<br>
+        for any visible HTML element.<br>
+        In this example, the background image<br>
+        is specified for a div element.<br>
+        By default, the background-image<br>
+        will repeat itself in the direction(s)<br>
+        where it is smaller than the element<br>
+        where it is specified. (Try resizing the<br>
+        browser window to see how the<br>
+        background image behaves.
+    </div>
+    <picture>
+        <source media="(min-width: 650px)" srcset="https://www.w3schools.com/html/img_food.jpg">
+        <source media="(min-width: 465px)" srcset="https://www.w3schools.com/html/img_car.jpg">
+        <img src="https://www.w3schools.com/html/img_girl.jpg" style="width:auto;">
+    </picture>
+    <hr>
+    <table id="t01" style="margin-left:auto; margin-right:auto; width:80%;">
+        <caption>Table Caption</caption>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td rowspan="2" colspan="2">Eve</td>
+            <td>94</td>
+        </tr>
+        <tr>
+            <td>80</td>
+        </tr>
+    </table>
+    <hr>
+    <h2>A Nested List</h2>
+    <p>List can be nested (lists inside lists):</p>
+
+    <ul>
+        <li>Coffee</li>
+        <li>Tea
+            <ul>
+                <li>Black tea</li>
+                <li>Green tea</li>
+            </ul>
+        </li>
+        <li>Milk</li>
+    </ul>
+    <ul style="list-style-type:square;">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+    <ul style="list-style-type:none;">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+    <ol>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    <ol type="a" start="3">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    <ol type="A" start="2">
+        <li>Coffee</li>
+        <li>Tea
+            <ol>
+                <li>Black tea</li>
+                <li>Green tea</li>
+            </ol>
+        </li>
+        <li>Milk</li>
+    </ol>
+    <ol type="I">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    <hr>
+    div is a block-level element, usually used to style blocks of content
+    <div style="background-color:black;color:white;padding:20px;">
+        <h2>London</h2>
+        <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a
+            metropolitan area of over 13 million inhabitants.</p>
+    </div>
+    span is a inline element, usually used to style parts of the text
+    <h1>My <span style="color:red">Important</span> Heading</h1>
+    <hr>
+    <p id="demo"></p>
+    <script>
+        document.getElementById("demo").innerHTML = "Hello JavaScript!";
+    </script>
+    <noscript>Sorry, your browser does not support JavaScript!</noscript>
+    <hr>
+    <pre>
+        <code>
+        x = 5;
+        y = 6;
+        z = x + y;
+        </code>
+    </pre>
+    Einstein wrote: <var>E</var> = <var>mc<sup>2</sup></var>.
+    <hr>
+    <input type="button" onclick="alert('Hello World!')" value="Click Me! I'm an input"> 
+    <button type="button" onclick="alert('Hello World!')">Click Me! I'm an button</button> 
+    <form target="_self" method="get">
+        <fieldset>
+            <legend>Personal information:</legend>
+            First name:<br>
+            <input type="text" name="firstname"><br>
+            Last name:<br>
+            <input type="text" name="lastname"><br>
+            Age<br>
+            <input type="number" min="0" max="200" name="age"><br>
+
+            <input type="radio" name="gender" value="male"> Male<br>
+            <input type="radio" name="gender" value="female" checked> Female<br>
+            <input type="radio" name="gender" value="other"> Other<br>
+
+            <input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
+            <input type="checkbox" name="vehicle2" value="Car"> I have a car<br>
+
+            <select name="cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+            </select><br>
+
+            <textarea name="message" style="width:200px; height:200px;">
+                The cat was playing in the garden.
+            </textarea><br>
+
+            Browser:<br>
+            <input list="browsers" type="text" name="browser">
+            <datalist id="browsers">
+                <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist><br>
+
+            <input type="submit" value="Submit"><br>
+            <input type="reset">
+        </fieldset>
+    </form>
+
+    <form action="/action_page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        <fieldset>
+            <legend>oniput attribute and output element:</legend>
+            0
+            <input type="range" id="a" name="a" value="50">
+            100 +
+            <input type="number" id="b" name="b" value="50">
+            =
+            <output name="x" for="a b"></output>
+            <br><br>
+            <input type="submit">
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
